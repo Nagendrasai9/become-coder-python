@@ -309,16 +309,63 @@
 ##
 
 
-from math import *
-def fac(a):
-    s=round(sqrt(a))
-    b=2
-    for i in range (2,s+1):
-        if a%i==0:
-            if i==a//i:
-                b+=1
-            else:
-                b+=2
-    print(b)
-a=int(input())
-fac(a)
+##from math import *
+##def fac(a):
+##    s=round(sqrt(a))
+##    b=2
+##    for i in range (2,s+1):
+##        if a%i==0:
+##            if i==a//i:
+##                b+=1
+##            else:
+##                b+=2
+##    print(b)
+##a=int(input())
+##fac(a)
+
+
+
+
+
+##class Solution:
+##    def isPowerOfThree(self, n: int) -> bool:
+##        p=0
+##        while 3**p>=1:
+##            if 3**p==n:
+##                return True
+##            if 3**p>n:
+##                return False
+##n=int(input())
+##if n==0:
+##            print( '1')
+##s=bin(n).replace("0b", "")
+##k=len(s)-1
+##i=0
+##while True:
+##    if s[i]==s[k]:
+##        break
+##    if s[1
+##        
+##print(s)
+     
+
+
+
+##num=int(input())
+##for i in range(1,num+1):
+##     for j in range(1,num+1):
+##          if j%2==1:
+##               
+##               if i%2==0:
+##                    print('0',end='')
+##               else:
+##                    print('1',end='')
+##          else:
+##               if i%2==0:
+##                    print('1',end='')
+##               else:
+##                    print('0',end='')
+##          
+##     print()
+              
+       
