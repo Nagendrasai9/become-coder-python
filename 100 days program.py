@@ -368,4 +368,115 @@
 ##          
 ##     print()
               
-       
+
+
+##num=int(input())
+##for i in range(1,num+1):
+##    for i in range(1,i+1):
+##        print('*',end='')
+##    print()
+##        
+
+  
+
+
+##num=int(input())
+##for i in range(num,0,-1):
+##    for j in range (1,i+1):
+##        print('*',end='')
+##    print()
+##    
+
+
+
+
+
+##num=int(input())
+##for i in range(1,num+1):
+##    for j in range (1,i+1):
+##        print(i,end='')
+##    print()
+##    
+
+
+
+##num=int(input())
+##for i in range(num,0,-1):
+##    for j in range (1,i+1):
+##        print(i+1,end='')
+##    print()
+##    
+
+
+
+##num=int(input())
+##for i in range(1,num+1):
+##    for j in range (1,i+1):
+##        print(j,end='')
+##    print()
+    
+##num=int(input())
+##for i in range(num,0,-1):
+##    t=num
+##    for j in range (1,i+1):
+##        print(t,end='')
+##        t-=1
+##    print()
+    
+##num=int(input())
+##for i in range(num,0,-1):
+##    if i%2==0:
+##        for j in range (i,0,-1):
+##            print(j,end='')
+##    else:
+##        for j in range(1,i+1):
+##            print(j,end='')
+##            
+##    print()
+##    
+
+
+
+##num=int(input())
+##for i in range(num,0,-1):
+##    for s in range(num,i,-1):
+##        print(' ',end='')
+##    for j in range(1,i+1):
+##        print('*',end='')
+##    print()
+##    
+        
+   
+##num=int(input())
+##for i in range(1,num+1):
+##    for s in range(num,i,-1):
+##        print(' ',end='')
+##    for j in range(1,i+1):
+##        print(i,end='')
+##    print()
+##
+
+
+
+
+##num=int(input())
+##for i in range(1,num+1):
+##    for s in range(i,num):
+##        print(' ',end='')
+##        
+##    
+##    for j in range(1,i*2):
+##        print(i,end='')
+##    print()
+
+
+##num=int(input())
+##for i in range(1,num+1):
+##    for s in range(1,num-i+1):
+##        print(' ',end='')
+##        
+##    
+##    for j in range(1,i*2):
+##        print(i,end='')
+##    print()
+
