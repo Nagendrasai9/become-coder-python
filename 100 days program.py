@@ -480,3 +480,58 @@
 ##        print(i,end='')
 ##    print()
 
+
+
+##n,x=map(int,input().split())
+##c=0
+##for i in range(1,n+1):
+##    if n%i==0:
+##        c+=1
+##    print(c)
+##for j in range(1,n+1):
+##    if x==c:
+##        print(i)
+##    if x<c:
+##        print('0')
+##    if n==1 and x==1:
+##        print('1')
+##        
+
+
+
+
+
+
+##n=int(input())
+##data=[]
+##for i in range(n):
+##    val=int(input())
+##    data.append(val)
+##print(data)
+
+
+##n=int(input())
+##data=[None for i in range(n)]
+##for i in range(n):
+##    val=int(input())
+##    data[i]=val
+##print(data)
+
+##def tot(n,data):
+##    e=0
+##    o=0
+##    for i in data:
+##        if i%2==0:
+##            e+=1
+##        else:
+##            o+=1
+##            
+##            
+##        
+##            
+##    return (e,o)
+##n=int(input())
+##data=list(map(int,input().split()))
+##x=tot(n,data)
+##print(x)
+
