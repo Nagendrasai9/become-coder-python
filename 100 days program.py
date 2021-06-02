@@ -535,3 +535,94 @@
 ##x=tot(n,data)
 ##print(x)
 
+
+
+
+##from math import *
+##def fp(n,dat):
+##    x=[]
+##    n=[]
+##    for i in data:
+##        if isprime(i):
+##            x.append(i)
+##        else:
+##            n.append(i)
+##    return  sum(x),sum(n)
+##def isprime(n):
+##    if n==1:
+##        return 0
+##    s=int(sqrt(n))
+##    for i in range(2,s+1):
+##        if n%i==0:
+##            return 0
+##    return 1
+##n=int (input())
+##data=list(map(int,input().split()))
+##pri,np=fp(n,data)
+##print(pri)
+##print(np)
+
+
+
+
+
+
+
+##def sumofdigits(n,data):
+##    x=0
+##    y=0
+##    for i in data:
+##        while i:
+##            r=i%10
+##            i=i//10
+##            x=x+r
+##        data[y]=x
+##        x=0
+##        y+=1
+##n=int (input())
+##data=list(map(int,input().split()))
+##sumofdigits(n,data)
+##print(*data)
+
+
+##def rev(n):
+##    x=0
+##    while n:
+##        r=n%10
+##        n=n//10
+##        x=x*10+r
+##    return x
+##def rod(n,data):
+##    
+##    for i in data:
+##        for i in range(len(data)):
+##            data[i]=rev(data[i])
+##    return data
+##n=int (input())
+##data=list(map(int,input().split()))
+##rod(n,data)
+##print(*data)
+
+
+
+
+
+
+
+##def pal(n,data):
+##    c=0
+##    for i in range(n):
+##        x,n=0,data[i]
+##        
+##        while data[i]:
+##            r=data[i]%10
+##            data[i]=data[i]//10
+##            x=x*10+r
+##        if x==n:
+##            c+=1
+##    return c
+##n=int (input())
+##data=list(map(int,input().split()))
+##
+##print(pal(n,data))
+##
