@@ -626,3 +626,254 @@
 ##
 ##print(pal(n,data))
 ##
+
+
+
+
+
+
+
+
+##def mix(n,data):
+##    s,c=data[0],0
+##    for i in data:
+##        if s==i:
+##            c+=1
+##        if s>i:
+##            s=i
+##            c=1
+##    ind=[s,c]
+##    for i in range(n):
+##        if s==data[i]:
+##            ind.append(i)
+##    return ind
+##   
+##            
+##            
+##    
+##n=int(input())
+##data=list(map(int,input().split()))
+##minval=mix(n,data)
+##print(*minval)
+##
+
+
+
+
+
+##dic={12:'nag',13:'end',14:'ra'}
+##for k in dic.keys():
+##    print(k)
+##for v in dic.values():
+##    print(v)
+##for k,v in dic.items():
+##    print(v,k)
+
+
+
+##n=int(input())
+##data=list(map(int,input().split()))
+##dic={}
+##m=0
+##for i in data:
+##    if i not in dic.keys():
+##        dic[i]=1
+##    else:
+##        dic[i]+1
+##    if m<dic[i]:
+##        m=dic[i]
+##for k in dic.keys():
+##    if dic[k]==m:
+##        print(k,dic[k])
+##
+
+
+
+##n,s=map(int,input().split())
+##a=list(map(int,input().split()))
+##c=0
+##for s in a:
+##        c+=1
+##        if c==2:
+##            p=a.index(s)
+##            print('true')
+##            print(a[p])
+##        if s not in a:
+##            print('false')
+##     
+
+
+
+
+##def sl(n,data):
+##        data=list(set(data))
+##        data.sort
+##        return data[-2]
+##n=int(input())
+##data=list(map(int,input().split()))
+##print(sl(n,data))
+
+
+
+##def sl(n,data):
+##        if data==sorted(data) or data==list(reversed(sorted(data))):
+##                return True
+##        return False
+##        
+##        
+##n=int(input())
+##data=list(map(int,input().split()))
+##print(sl(n,data))
+##
+
+
+
+
+##def maxcount(n,arr):
+##        if n==0:
+##                return 0
+##        count=0
+##        c=0
+##        for i in range(n):
+##                if arr[i]==1:
+##                        c+=1
+##                else:
+##                        if count<c:
+##                                count=c
+##                        c=0
+##        return (count,c)
+##n=int(input())
+##data=list(map(int,input().split()))
+##print(maxcount(n,data))
+##
+
+
+
+
+
+##def maxcount(n,arr):
+##        if n==0:
+##                return 0
+##        c=0
+##       
+##        for i in arr:
+##                if i==0:
+##                        c+=1
+##                        arr.remove(arr[i])
+##        while c:
+##                arr.append(0)
+##        return arr
+##        
+##n=int(input())
+##data=list(map(int,input().split()))
+##print(maxcount(n,data))
+##
+
+
+
+##n=int(input())
+##c=0
+##coins=list(map(int,input().split()))
+##i=0
+##while True:
+##        if coins[i]==0:
+##                break
+##        else:
+##                c+=1
+##                coins[i]=coins[i]-1
+##                i=i%n+1
+##                if i==n:
+##                        i=0                       
+##print(c)
+##
+        
+
+
+##n=int(input())
+##arr=list(map(int,input().split()))
+##c=[]
+##y=0    
+##for i in range(n):
+##        c.append(arr.count(arr[i]))
+##        y=c.index(max(c))
+##print(arr[y])
+##        
+
+
+
+
+
+
+
+
+##def fun(a,b):
+##    t=[]
+##    for i in a:
+##        for j in b:
+##            if i==j:
+##                t.append(i)
+##    return ''.join(t)
+##    
+##
+##s1=input()
+##s2=input()
+##print(fun(s1,s2))
+
+
+
+
+##def fun(a,b):
+##    t=[]
+##    for i in a.split():
+##        for j in b.split():
+##            if i==j:
+##                t.append(i)
+##    return ' '.join(t)
+##    
+##
+##s1=input()
+##s2=input()
+##print(fun(s1,s2))
+##
+##
+
+
+
+##def linear(n,data,key):
+##    for i in data:
+##        if i==key:
+##            return True
+##    return False
+##n=int(input())
+##data=map(int,input().split())
+##key=int(input())
+##print(linear(n,data,key))
+
+
+
+
+
+def binary(n,data,key):
+    data.sort()
+    l=0
+    h=n-1
+    while True:
+        if l>h:
+            return False
+        m=(l+h)//2
+        if data[m]==key:
+            return True
+        elif key<data[m]:
+            h=m-1
+        elif key>data[m]:
+            l=m+1
+               
+
+
+
+n=int(input())
+data=list(map(int,input().split()))
+
+key=int(input())
+print(binary(n,data,key))
+
