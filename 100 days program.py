@@ -853,27 +853,72 @@
 
 
 
-def binary(n,data,key):
-    data.sort()
-    l=0
-    h=n-1
-    while True:
-        if l>h:
-            return False
-        m=(l+h)//2
-        if data[m]==key:
-            return True
-        elif key<data[m]:
-            h=m-1
-        elif key>data[m]:
-            l=m+1
-               
+##def binary(n,data,key):
+##    data.sort()
+##    l=0
+##    h=n-1
+##    while True:
+##        if l>h:
+##            return False
+##        m=(l+h)//2
+##        if data[m]==key:
+##            return True
+##        elif key<data[m]:
+##            h=m-1
+##        elif key>data[m]:
+##            l=m+1
+##               
+##
+##
+##
+##n=int(input())
+##data=list(map(int,input().split()))
+##key=int(input())
+##print(binary(n,data,key))
+##
+##
+
+
+##def sorting(n,data):
+##    x=max(data)
+##    for i in range(1,n):
+##        data[-i],data[data.index(x)]=data[data.index(x)],data[-i]
+##        x=max(data[:-i])        
+##        print(data)   
+##n=int(input())
+##data=list(map(int,input().split()))
+##sorting(n,data)
+##
 
 
 
-n=int(input())
-data=list(map(int,input().split()))
+##n=int(input())
+##data=list(map(int,input().split()))
+##for i in range(n-1):
+##    swaps=0
+##    for i in range(n-1):
+##        if data[i]>data[i+1]:
+##            data[i],data[i+1]=data[i+1],data[i]
+##            swaps+=1
+##    if swaps==0:
+##        break
+##    print(data)
+##            
 
-key=int(input())
-print(binary(n,data,key))
+
+
+##def fun(n):
+##    if n<=1:
+##        print(n)
+##        return
+##    print(n)
+##    fun(n-1)
+##    fun(n-2)
+##n=int(input())
+##print(fun(n))
+
+
+
+
+
 
